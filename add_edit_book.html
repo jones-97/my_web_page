@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add/Edit Book Definition</title>
+    <link rel="stylesheet" href="add_edit_book.css" />
+</head>
+<body>
+    <div class="header">ADD/EDIT BOOK DEFINITION</div>
+    <div class="container">
+        <label for="book-cover">Select Book Cover:</label>
+        <input type="file" id="book-cover" accept="image/*">
+
+        <label for="book-title">Book Title:</label>
+        <input type="text" id="book-title" placeholder="Enter book title">
+
+        <label for="book-synopsis">Synopsis:</label>
+        <textarea id="book-synopsis" placeholder="Enter book synopsis"></textarea>
+
+        <label>Edit Chapters: <span class="link" id="edit-chapters">Click me</span></label>
+
+        <div class="button-container">
+            <button class="button save-button" id="save-button">SAVE</button>
+            <button class="button delete-button" id="delete-button">DELETE BOOK</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('save-button').addEventListener('click', () => {
+            alert('Book saved!');
+        });
+
+        document.getElementById('delete-button').addEventListener('click', () => {
+            if (confirm('Are you sure you want to delete this book?')) {
+                alert('Book deleted.');
+            }
+        });
+
+        document.getElementById('edit-chapters').addEventListener('click', () => {
+            alert('Redirecting to edit chapters...');
+        });
+    </script>
+</body>
+</html>

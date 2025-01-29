@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Settings</title>
+    <link rel="stylesheet" href="site_settings.css" />
+</head>
+<body>
+    <header>
+        <h1>Site Settings</h1>
+        <button onclick="logout()">Logout</button>
+    </header>
+
+    <div class="container">
+        <h2>Books</h2>
+
+        <div class="book-card">
+            <img src="https://via.placeholder.com/100x150" alt="Book Cover">
+            <div class="book-details">
+                <span style="color: #FF4081; font-size: 1.2rem;">$_book_title</span>
+                <button onclick="editChapters()">Edit Chapters</button>
+            </div>
+        </div>
+
+        <div class="add-book" onclick="addNewBook()">
+            <i>+</i>
+            <span>Add new Book</span>
+        </div>
+    </div>
+
+    <script>
+        function logout() {
+            alert('Logging out...');
+            // Add logout functionality here
+        }
+
+        function editChapters() {
+            alert('Redirecting to edit chapters...');
+            // Add edit chapters functionality here
+        }
+
+        function addNewBook() {
+            alert('Redirecting to add new book...');
+            // Add add new book functionality here
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Chapters</title>
+    <link rel="stylesheet" href="view_book(admin).css"  />
+</head>
+<body>
+    <header>Book: $_book_title</header>
+
+    <div class="container">
+        <div class="status">
+            <span class="status-label">CAN BE VIEWED BY PUBLIC?</span>
+            <span class="status-value">$_viewing_status</span>
+        </div>
+
+        <div class="chapters-section">
+            <h2>CHAPTERS:</h2>
+            <div class="chapter-placeholder">Chapter list will appear here</div>
+        </div>
+
+        <div class="actions">
+            <button onclick="addChapter()">ADD NEW CHAPTER</button>
+            <button onclick="enablePublicAccess()">ENABLE BOOK PUBLIC ACCESS</button>
+        </div>
+    </div>
+
+    <script>
+        function addChapter() {
+            alert('Add New Chapter functionality coming soon!');
+        }
+
+        function enablePublicAccess() {
+            alert('Enable Public Access functionality coming soon!');
+        }
+    </script>
+</body>
+</html>
